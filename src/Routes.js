@@ -5,6 +5,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
+import NotFoun from './notfound';
 
 function RouteLink() {
   return (
@@ -27,7 +28,7 @@ export default function MainRoute() {
                 <Route path = "/About" element={<About />} />
                     
                 
-                <Route element={<h1 align="center">Ошибка, документ не найден</h1>} />
+                <Route element={<NotFoun />} path="*" />
                     
                 
             </Routes>        
